@@ -52,7 +52,9 @@
   <ItemGroup>
     <Compile Include="FizzBuzz.cs" />
     <Compile Include="FizzBuzzTest.cs" />
+    <Compile Include="IRule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rules.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -11,16 +11,18 @@ namespace FizzBuzzKata1
         const int fizzBuzz = 15;
         const int Fizz = 3;
         const int Buzz = 5;
+        string[] solutions = new string[] { "FizzBuzz", "Buzz", "Fizz", "{0}" };
         public string Answer(int p)
         {
+            FizzRule fizzRule = new FizzRule();
 
             if (isDivisibleBy(p, fizzBuzz))
             {
                 return "FizzBuzz";
             }
-            if (isDivisibleBy(p, Fizz))
+            if (fizzRule.check(p))
             {
-                return "Fizz";
+                return fizzRule.result(p);
             }
             if (isDivisibleBy(p, Buzz))
             {
